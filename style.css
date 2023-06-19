@@ -1,0 +1,11 @@
+
+h2{
+    font-family: 'Courier New';
+    letter-spacing: 1px;
+    font-size: 10px;
+}
+button{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}

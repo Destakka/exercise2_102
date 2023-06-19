@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="submit.js" />
+    <title>DOM Javascript</title>
+</head>
+<body>
+    <div class="container">
+        <center>
+    <div class="header">
+        <h1>Peminatan Musik Album Fabula</h1>
+    </div>
+</center>
+    <form action="">
+        <fieldset>
+    <div class="form-group">
+        <label for="nama">Nama</label>
+        <input type="text" placeholder="Nama Anda" id="nama" />
+    </div>
+    <div class="form-group">
+        <label for="notelp">No Telpon</label>
+        <input type="text" placeholder="No Telpon Anda" id="notelp" />
+    </div>
+    <div class="form-group">
+        <label for="alamat">Alamat</label>
+        <input type="text" placeholder="Alamat Anda" id="alamat" />
+    </div>
+    <div class="form-group">
+        <label for="tanggal">Tanggal</label><br />
+        <input type="date" id="tanggal" />
+    </div>
+        </fieldset>
+        <p>
+        <fieldset>
+            <div class="form-group">
+                <label for="Judul Lagu">Pilih Judul Lagu</label>
+                <select id="Judul Lagu">
+                <option value="Ini Laguku">Ini Laguku</option>
+                <option value="Buru-Buru">Buru-Buru</option>
+                <option value="Bawa Dia Kembali">Bawa Dia Kembali</option>
+                <option value="Putar Waktu">Putar Waktu</option>
+                <option value="Bohongi Hati">Bohongi Hati</option>
+                <option value="Melawan Restu">Melawan Restu</option>
+                <option value="Sial">Sial</option>
+                <option value="Sisa Rasa">Sisa Rasa</option>
+                <option value="Pecahkan Hatiku">Pecahkan Hatiku</option>
+                <option value="Kisah Sempurna">	Kisah Sempurna</option>
+                </select>
+            </div>
+        </fieldset>
+    </p>
+
+        <fieldset>
+        <label for="genre">Pemilihan Genre :</label><br />
+        <div class="form-group">
+            <input
+            type="radio"
+            name="genre"
+            id="POP"
+            value="POP"
+            />
+            <label for="POP">POP</label> <br />
+            <input type="radio" name="POP" id="Rock" value="Rock" />
+            <label for="Rock">Rock</label> <br />
+            <input
+            type="radio"
+            name="genre"
+            id="HipHop"
+            value="HipHop"
+            />
+            <label for="HipHop">HipHop</label><br />
+            <input type="radio" name="peminatan" id="RnB" value="RnB" />
+            <label for="RnB">R & B</label><br />
+        </div>
+        </fieldset>
+
+        <p>
+        <fieldset>
+        <div class="form-group">
+            <label for="KritiknSaran">Kritik & Saran</label><br />
+            <textarea
+            placeholder="Tulis disini"
+            name="KritiknSaran"
+            id="KritiknSaran"
+            cols="30"
+            rows="5"
+            ></textarea>
+        </div>
+        <div class="form-group">
+            <label for="type">Type</label>
+            <select id="type">
+            <option value="Kritik">Kritik</option>
+            <option value="Saran">Saran</option>
+            </select>
+        </div>
+        </fieldset>
+    </p>
+
+        <div class="form-group">
+        <button type="submit" onclick="kirimData()">Kirim</button>
+        </div>
+        
+        <div class="button">
+            <button class="button">
+                <a href="index.html"> back</a>
+            </button>
+        </div>
+    </form>
+    </div>
+    <script src="submit.js"></script>
+</body>
+</html>
